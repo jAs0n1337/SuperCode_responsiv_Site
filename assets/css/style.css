@@ -122,7 +122,7 @@
         background-repeat: none;
     }
 
-    main section div {
+    main section div:nth-of-type(1) {
         background-color: #DF8480;
         color: #fff;
         font-family: nunito_700;
@@ -172,6 +172,232 @@
         font-family: nunito_700;
         font-size: 1.6rem;
 
+    }
+
+    input:nth-of-type(2) {
+        background-color: #DF8480;
+        width: 90%;
+        height: 54px;
+        border-radius: 50px;
+        margin: 0 5%;
+        cursor: pointer;
+        color: white;
+        font-family: nunito_700;
+        font-size: 1.6rem;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 20px 20px 20px;
+    }
+
+    footer p:nth-of-type(2) {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .grid-container {
+        display: grid;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .grid-item {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .grid-item2 {
+        text-align: left;
+        padding: 30px 80px
+    }
+
+    .item1 {
+        grid-column: 4/ span 2;
+        grid-row: 1;
+    }
+
+    .item2 {
+        grid-column: 5;
+        grid-row: 2 / span 24;
+        text-align: right;
+    }
+
+    .item3_1 {
+        grid-column: 1/ span 2;
+        grid-row: 1
+    }
+
+    .item3_2 {
+        grid-column: 3/ span 2;
+        grid-row: 1,
+    }
+
+    .item3_3 {
+        grid-column: 1/ span 2;
+        grid-row: 2
+    }
+
+    .item3_4 {
+        grid-column: 3/ span 2;
+        grid-row: 2
+    }
+
+    .item3_5 {
+        grid-column: 1/ span 2;
+        grid-row: 3
+    }
+
+    .item3_6 {
+        grid-column: 3/ span 2;
+        grid-row: 2
+    }
+
+    /* .item5 {
+        grid-column: 1/ span 1;
+        grid-row: 2;
+    }
+
+    .item6 {
+        grid-column: 3/ span 1;
+        grid-row: 3;
+    }
+
+    .item7 {
+        grid-column: 2/ span 1;
+        grid-row: 4;
+    } */
+
+    .sec1 {
+        grid-column: 1;
+    }
+
+    .sec2 {
+        grid-column: 2/ span 1;
+    }
+
+    .sec3 {
+        grid-column: 1/ span 4;
+        grid-row: 2;
+    }
+
+
+
+    /* ==========FONT CLASSES========== */
+
+    .font__rock__16 {
+        font-family: rocksalt_400;
+        font-size: 1.6rem;
+    }
+
+    .font__nun400__16_black {
+        font-family: nunito_400;
+        font-size: 1.6rem;
+        color: #000
+    }
+
+    .font__nun700__16 {
+        font-family: nunito_700;
+        font-size: 1.6rem;
+        color: #DF8480;
+    }
+
+    .font__nun700__16__white {
+        font-family: nunito_700;
+        font-size: 1.6rem;
+        color: #fff;
+    }
+
+    .font__nun700__16__black {
+        font-family: nunito_700;
+        font-size: 1.6rem;
+        color: #000;
+        padding-bottom: 40px;
+    }
+
+    .font__nun900__48 {
+        font-family: nunito_900;
+        color: #DF8480;
+        font-size: 4.8rem;
+        margin-bottom: 10px;
+    }
+
+
+    /* =============HTML STYLE============== */
+
+    body header {
+        background-image: url("../img/dog_catching_snack.jpg");
+        height: 900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main section div:nth-of-type(1) {
+        background-color: #DF8480;
+        color: #fff;
+        font-family: nunito_700;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 24px 0
+    }
+
+    main section:nth-of-type(1) article p {
+        text-align: left;
+    }
+
+    main section:nth-of-type(2) div {
+        display: grid;
+        gap: 10px
+    }
+
+    main section:nth-of-type(2) article:nth-of-type(1) {
+        display: grid;
+        background-image: url("../img/dog_eating_cookies.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+        width: 350px;
+    }
+
+    main section:nth-of-type(2) article:nth-of-type(2) {
+        background-image: url("../img/dog_bowl.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 190px;
+        max-width: 200px;
+
+    }
+
+    main section:nth-of-type(2) article:nth-of-type(3) {
+        text-align: center;
+        margin: 5px;
+    }
+
+    /* ============== FOOTER =============== */
+
+    footer {
+        background-color: #242424;
+    }
+
+    footer p:nth-of-type(1) {
+        text-align: center;
+        margin: 20px 40px;
+        padding-top: 20px;
+    }
+
+    input:nth-of-type(1) {
+        background-color: #fff;
+        width: 90%;
+        height: 54px;
+        border-radius: 50px;
+        margin: 0 5% 10px 5%;
+        text-align: center;
+        font-family: nunito_700;
+        font-size: 1.6rem;
     }
 
     input:nth-of-type(2) {
